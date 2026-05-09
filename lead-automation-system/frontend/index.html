@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Lead Automation System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="page">
+    <section class="card">
+      <div class="badge">Project 1</div>
+
+      <h1>AI Lead Automation System</h1>
+      <p class="subtitle">
+        Submit a business enquiry and send the lead into n8n for automation.
+      </p>
+
+      <form id="leadForm">
+        <div class="field">
+          <label for="fullName">Full Name</label>
+          <input type="text" id="fullName" name="fullName" required />
+        </div>
+
+        <div class="field">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="field">
+          <label for="phone">Phone Number</label>
+          <input type="text" id="phone" name="phone" />
+        </div>
+
+        <div class="field">
+          <label for="company">Company Name</label>
+          <input type="text" id="company" name="company" required />
+        </div>
+
+        <div class="field">
+          <label for="service">Service Needed</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option value="Zoho CRM Automation">Zoho CRM Automation</option>
+            <option value="AI Workflow Automation">AI Workflow Automation</option>
+            <option value="IT Support">IT Support</option>
+            <option value="Cybersecurity Review">Cybersecurity Review</option>
+            <option value="Business Systems Integration">Business Systems Integration</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Tell us what you need</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" id="submitBtn">Submit Lead</button>
+
+        <p id="statusMessage" class="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
